@@ -1,0 +1,398 @@
+MY project
+
+1. Prompt Dodge Game
+Description
+Prompt Dodge is an interactive quiz game where players need to answer engineering-related questions while dodging obstacles in a car.
+
+Features
+Dodge obstacles while answering engineering prompts.
+Multiple levels with increasing difficulty.
+Score tracking.
+How to Play
+Use the arrow keys to move the car left and right.
+Answer the engineering prompts correctly to score points.
+Avoid colliding with obstacles.
+Installation
+Clone the repository.
+Install Python and Pygame if not already installed.
+Run the main Python script to start the game.
+--------------------------------------------------------------------------------------
+2. Weather Web App
+This is a web application that allows users to check the current weather conditions for a specific city. The app is built using Java Servlets for server-side processing and HTML/CSS for the client-side user interface.
+
+Features
+Search for weather information by city name
+Display current temperature, humidity, wind speed, and weather condition
+Dynamic weather icon based on the current weather condition
+Responsive design for various screen sizes
+Technologies Used
+Java Servlet
+HTML/CSS
+OpenWeatherMap API
+Demo
+ Recording.2024-05-06.195149.mp4 
+Getting Started
+Clone the repository or download the source code.
+Import the project into your preferred Java IDE.
+Configure the OpenWeatherMap API key in the MyServlet.java file.
+Build and deploy the application on a Java web server (e.g., Apache Tomcat).
+Access the application through a web browser.
+Usage
+Open the application in your web browser.
+Enter the name of the city you want to check the weather for in the search input.
+Click the search button or press Enter.
+The application will display the current weather information, including temperature, humidity, wind speed, weather condition, and a corresponding weather icon.
+Contributing
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+
+Acknowledgments
+OpenWeatherMap for providing the weather data API.
+Font Awesome for the icons used in the application.
+
+
+--------------------------------------------------------------------------------------
+3.Event Management System - Intermediate Level
+This project is an Event Management System implemented in Java using Swing for the user interface and MySQL for data persistence. It provides basic functionalities for customers to create and manage events, attendees, and special requests, and for administrators to oversee and manage all events.
+
+Features
+For Customers:
+
+Registration and Login: Customers can register with the system and log in to access their dashboard.
+Event Creation: Customers can create events by providing details like title, description, type, date, and status.
+Attendee Management: Customers can add attendees to their events.
+Special Requests: Customers can submit special requests related to their events.
+View Event Details: Customers can view the details of their created events.
+For Administrators:
+
+Login: Administrators can log in to access their dashboard.
+View All Events: Administrators can view a list of all events created by all customers.
+Approve/Reject Events: Administrators have the ability to approve or reject pending events.
+View Event Details: Administrators can view detailed information for any event.
+Refresh Event List: The administrator dashboard can be refreshed to get the latest event data.
+Technologies Used
+Java: The core programming language.
+Swing: Used for building the graphical user interface (GUI).
+MySQL: The database for storing user data, event information, attendees, and special requests.
+JDBC: Used for connecting to the MySQL database and performing database operations.
+Database Schema
+The system uses the following tables in the MySQL database:
+
+User: Stores user information (userId, username, password, email, userType).
+Customer: Stores customer-specific information (customerId, customerName, userId).
+Administrator: Stores administrator-specific information (adminId, adminName, userId).
+Event: Stores event details (eventId, eventTitle, eventDescription, eventType, eventDate, eventStatus, customerId).
+Attendee: Stores attendee information (attendeeId, attendeeName, eventId).
+SpecialRequest: Stores special requests related to events (requestId, requestDescription, eventId).
++-------+ 1 +--------------+ | User |------<>-----| Customer | +-------+ +-------------+ | | | | 1 1 | | +---------------+ +-------+ | Administrator | | Event | +---------------+ +-------+ | | 1 N | | +----------+ +----------------+ | Attendee | | SpecialRequest | +----------+ +----------------+
+Getting Started
+Database Setup:
+
+Create a database named "event_management_system" in your MySQL server.
+Create the tables listed in the "Database Schema" section by running the provided SQL scripts (You can find these scripts in the project code comments).
+Project Setup:
+
+Import the project into Eclipse (or your preferred Java IDE).
+Configure the build path to include the JUnit and MySQL Connector/J (JDBC driver) libraries. You can download the Connector/J JAR file from the MySQL website: https://dev.mysql.com/downloads/connector/j/
+Update the database connection details (URL, username, password) in DatabaseConnection.java to match your MySQL setup.
+Running the Application:
+
+Run the WelcomePageUI.java file as a Java application.
+Register as a customer or administrator, log in, and interact with the system's functionalities.
+Demo of the Application: *image
+
+image
+
+ Recording.2024-05-16.113204.part.2.mp4 
+ Untitled.video.-.Made.with.Clipchamp.mp4 
+Future Enhancements
+This project can be further enhanced with the following features:
+
+Password Hashing: Implement password hashing for security.
+Input Validation: Add robust input validation for all forms.
+Advanced UI Features: Implement a visual calendar, user profile management, email notifications, and improved table formatting.
+Event Capacity: Add event capacity limits and handle registration accordingly.
+Search and Filtering: Implement search and filtering options for events and attendees.
+Reporting and Analytics: Generate reports on event attendance, revenue, and customer behavior.
+
+--------------------------------------------------------------------------------------
+4. Eco-Tech Start Website
+This is a website for a fictional eco-friendly technology company. The site showcases the company's commitment to sustainable innovation and environmentally conscious business practices. It features information about the company's products, benefits of using their technology, and ways to get in touch.
+
+Features
+Responsive design for various screen sizes
+Animated elements on scroll
+Contact form
+About page with company mission and values
+Modern and clean user interface with a focus on sustainability
+File Structure
+index.html: Main page of the website
+about.html: Page with information about the company
+contact.html: Contact form page
+styles.css: CSS file for styling
+script.js: JavaScript file for animations and interactions
+img/: Directory for images
+Technologies Used
+HTML5
+CSS3
+JavaScript
+Font Awesome (for icons)
+Google Fonts (Poppins)
+Setup and Installation
+Clone the repository or download the ZIP file.
+Extract the files to your desired location.
+Open index.html in a web browser to view the website.
+Usage
+Navigate through the website using the menu items in the header. The main sections include:
+
+Home: Overview of the company and its offerings
+Features: Highlights of the product features
+Benefits: Advantages of using Eco-Tech Start's solutions
+Testimonials: Customer feedback
+About: Company history and mission
+Contact: Form to get in touch with the company
+Customization
+To customize the website:
+
+Modify the HTML files to update content.
+Adjust styles in styles.css to change the appearance.
+Update script.js to modify animations or add new functionality.
+Replace images in the img/ directory with your own assets.
+Contributing
+This project is for demonstration purposes. However, if you'd like to suggest improvements or report issues, please open an issue or submit a pull request.
+
+License
+This project is open source and available under the MIT License.
+
+Credits
+Images: Replace with attribution for your actual images
+Icons: Font Awesome
+Fonts: Google Fonts (Poppins)
+
+--------------------------------------------------------------------------------------
+5. Financial Task Scheduler
+This project implements a Financial Task Scheduler that applies various Operating System scheduling algorithms to manage and prioritize financial tasks. It serves as a prototype to demonstrate how OS concepts can be used in Finance and Investment.
+
+Operating System Concepts Applied
+The scheduler implements the following OS scheduling algorithms:
+
+First-Come, First-Served (FCFS)
+Shortest Job First (SJF)
+Shortest Remaining Time First (SRTF)
+Round Robin
+Priority Scheduling (Preemptive)
+Portfolio-Based Priority Management (PBPM) - A custom algorithm
+Domain: Finance and Investment
+In the context of finance and investment, task scheduling is crucial for managing various operations such as:
+
+Trade Execution
+Risk Assessment
+Portfolio Rebalancing
+Market Analysis
+The scheduler allows prioritization based on task urgency, potential portfolio impact, and market volatility.
+
+Implementation
+The project is implemented in Python, utilizing the following libraries:
+
+Streamlit: For creating the interactive web application
+Pandas: For data manipulation and display
+Matplotlib: For visualizing the task execution timeline
+Key Files
+app.py: The main Streamlit application that provides the user interface.
+scheduling_algorithms.py: Contains the implementation of all scheduling algorithms.
+requirements.txt: Lists all the Python dependencies required to run the project.
+Features
+Add financial tasks with properties such as name, arrival time, burst time, priority, task type, and portfolio impact.
+Choose from multiple scheduling algorithms to organize tasks.
+Visualize the task execution timeline.
+Calculate and display average waiting time for tasks.
+Adjust parameters like time quantum (for Round Robin) and market volatility (for PBPM).
+How to Run
+Clone the repository
+Install the required dependencies:
+pip install -r requirements.txt
+Run the Streamlit app:
+streamlit run app.py
+Usage
+Add tasks using the input form.
+Select a scheduling algorithm from the sidebar.
+Adjust any necessary parameters (e.g., time quantum for Round Robin).
+Click "Run Scheduling Algorithm" to see the results.
+View the task execution timeline and average waiting time.
+Future Enhancements
+Implement more domain-specific scheduling algorithms.
+Add real-time data integration for market conditions.
+Enhance visualization with more detailed performance metrics.
+Implement task dependencies and resource allocation.
+
+--------------------------------------------------------------------------------------
+6. Smart Home Management Website
+Description
+This project aims to develop a user-friendly website for managing smart home devices and providing related services and products.
+
+Features
+Device Control: Users can control smart devices such as lights, thermostats, and door locks through a web interface.
+Security: The system includes security features like motion detection, door/window sensors, and real-time surveillance.
+E-commerce: Users can browse and purchase smart home products directly from the website.
+User Authentication: The website implements a login system for secure access to device controls and personalized features.
+Technologies Used
+Frontend: HTML, CSS, JavaScript, Bulma CSS framework
+Backend: Node.js, Express.js
+Templating Engine: EJS
+Database: Placeholder user data (consider using MySQL, PostgreSQL, MongoDB, or others)
+Installation and Usage
+Clone or download the repository.
+Install Node.js and npm (Node Package Manager).
+Navigate to the project directory in your terminal.
+Run npm install to install the required dependencies.
+Run node app.js to start the server.
+Access the website at http://localhost:3000 in your browser.
+Navigate to the login page at http://localhost:3000/login to login with the provided credentials.
+Current Credentials (Replace with your actual user data):
+Username: Samarth, Password: 2343151
+Username: Priyanshy, Password: 2343149
+Username: Rahul, Password: 2343150
+Future Improvements
+Implement a database for user management and product information.
+Enhance security measures with password hashing and secure session management.
+Integrate with actual smart home devices using appropriate communication protocols (e.g., MQTT, Zigbee).
+Implement a shopping cart and checkout system with payment gateway integration.
+Add more device control functionalities and expand the range of supported devices.
+Improve the user interface and user experience.
+Implement error handling and logging mechanisms.
+Contributing
+Contributions are welcome! Please feel free to fork the repository, make changes, and submit pull requests.
+
+--------------------------------------------------------------------------------------
+7. Clickbait Creator
+Description
+The Clickbait Creator is a web application built with Flask that generates engaging clickbait content based on user input. Users can specify the topic, content type, platform, tone, and additional details to create tailored content. The application utilizes the Google AI API to generate high-quality text.
+
+Features
+User-friendly interface for generating clickbait content.
+Supports multiple content types (website and platform-specific).
+Customizable tone options (informative, casual, humorous, etc.).
+Responsive design for optimal viewing on various devices.
+Loading animation during content generation.
+Copy generated content to clipboard with a single click.
+Technologies Used
+Python
+Flask
+HTML/CSS
+JavaScript
+Google AI API
+dotenv for environment variable management
+Installation
+Prerequisites
+Python 3.x
+pip (Python package installer)
+Steps
+Clone the repository:
+
+git clone https://github.com/yourusername/clickbait-creator.git
+cd clickbait-creator
+Create a virtual environment (optional but recommended):
+
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+Install the required packages:
+
+pip install -r requirements.txt
+Create a .env file in the root directory and add your Google AI API key:
+
+GOOGLE_AI_API_KEY=your_api_key_here
+Usage
+Run the application:
+
+python main.py
+Open your web browser and navigate to http://127.0.0.1:5000/.
+
+Fill out the form with the desired topic, content type, platform, tone, and any additional details.
+
+Click the "Generate Clickbait" button to create your content.
+
+The generated content will be displayed below the form, and you can copy it to your clipboard.
+
+Output
+image image
+
+Contributing
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgments
+Thanks to the developers of Flask and the Google AI API for providing the tools to create this application
+
+--------------------------------------------------------------------------------------
+8. Diwali Celebration Web App
+Overview
+This project is a festive web application designed to celebrate Diwali, the festival of lights. It features interactive elements such as animated diyas, fireworks, and personalized messages based on user input. The application is built using HTML, CSS, and JavaScript, providing a vibrant and engaging user experience.
+
+Features
+Interactive Greeting: Users can enter their name and select a language to receive a personalized Diwali greeting.
+Animations: The app includes animated diyas, fireworks, and rangoli patterns to enhance the festive atmosphere.
+Surprise Messages: Clicking on the gift box reveals surprise messages and additional animations.
+Responsive Design: The application is designed to be mobile-friendly, ensuring a good experience on various devices.
+Technologies Used
+HTML: Structure of the web application.
+CSS: Styling and animations for a festive look.
+JavaScript: Interactivity and dynamic content generation.
+Getting Started
+To run the application locally, follow these steps:
+
+Clone the repository:
+
+git clone https://github.com/yourusername/diwali-celebration.git
+cd diwali-celebration
+Open the index.html file in your web browser:
+
+open index.html
+Usage
+Enter your name in the input field.
+Select your preferred language from the dropdown menu.
+Click the "Celebrate Diwali" button to see your personalized greeting and enjoy the animations.
+Click on the gift box to reveal surprise messages.
+Customization
+You can customize the following aspects of the application:
+
+Messages: Modify the greetings and jokes in the script.js file.
+Styles: Change colors and animations in the styles.css file.
+Animations: Adjust the number of diyas, fireworks, and rangoli patterns in the script.js file.
+Contributing
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Acknowledgments
+Special thanks to the creators of the libraries and resources used in this project.
+Happy Diwali to everyone celebrating!
+
+
+
+--------------------------------------------------------------------------------------------
+
+My Experience
+
+1.CodeClause Pvt Ltd
+ Java Development Intern
+ May 2024 - June 2024 (2 months)
+ Pune, Maharashtra, India
+ 2. Christ University, Bangalore
+ Web Developer
+ January 2024 - May 2024 (5 months)
+ Bengaluru, Karnataka, India
+ 3. YouVah
+ Graphic Design Intern  
+ April 2022 - May 2022 (2 months)
+ Chandigarh, India
+
+--------------------------------------------------------------------------------------------
+
+Education
+ 1.Christ University, Bangalore
+ Bachelor of Computer Application With Honors and Research, Computer
+ Technology/Computer Systems Technology · (2023 - 2027)
+ 2. Army Public School (APS)
+ High School Diploma, Art and Humanity  · (April 2010 - April 2023)
